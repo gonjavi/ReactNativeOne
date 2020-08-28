@@ -4,7 +4,7 @@ import { Card } from 'react-native-elements';
 
 function RenderDish(props) {
   const dish = props.dish;    
-    if (dish !== null) {
+    if (dish != null) {
       return(
         <Card
           featuredTitle={dish.name}
@@ -21,7 +21,7 @@ function RenderDish(props) {
 }
 
 function Dishdetail(props) {
-    return(<RenderDish dish={props.dish} />);
+    return (<RenderDish dish={props.dish} />);
 }
 
 export default Dishdetail;

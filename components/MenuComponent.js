@@ -14,14 +14,16 @@ function Menu(props) {
         leftAvatar={{ source: require('./images/uthappizza.png')}}
       />
 
-    )
+    );
   }
-  <FlatList 
-    data={props.dishes}
-    renderItem={renderMenuItem}
-    keyExtractor={item => item.id.toString()}
-  />
 
+  return (
+    <FlatList 
+      data={props.dishes}
+      renderItem={renderMenuItem}
+      keyExtractor={item => item.id.toString()}
+    />
+  );
 }
 
 export default Menu;
